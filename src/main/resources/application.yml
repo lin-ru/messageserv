@@ -1,0 +1,8 @@
+spring:
+    application:
+        name: messageserv
+    datasource:
+        url: jdbc:postgresql://${MESSAGESERV_DB_HOST}:${MESSAGESERV_DB_PORT}/${MESSAGESERV_DB_NAME}
+        username: ${MESSAGESERV_DB_USERNAME}
+        password: ${MESSAGESERV_DB_PASSWORD}
+        driverClassName: org.postgresql.Driver

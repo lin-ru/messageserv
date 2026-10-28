@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:13.3
+    environment:
+      - POSTGRES_USER=${MESSAGESERV_DB_USERNAME}
+      - POSTGRES_PASSWORD=${MESSAGESERV_DB_PASSWORD}
+      - POSTGRES_DB=${MESSAGESERV_DB_NAME}
+    ports:
+      - '${MESSAGESERV_DB_PORT}:5432'
